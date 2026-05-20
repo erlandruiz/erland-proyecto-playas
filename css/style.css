@@ -715,7 +715,7 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
-  z-index: var(--z-fixed);
+  /* z-index: var(--z-fixed); */
 
   width: 96px;
   height: 84px;
