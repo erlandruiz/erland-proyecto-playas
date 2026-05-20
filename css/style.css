@@ -701,6 +701,272 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+
+/* iconos,  estados start */
+.card__article__explora {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__imagen__insta__explora {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: var(--z-fixed);
+
+  width: 96px;
+  height: 84px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  background: transparent;
+  color: #fff;
+}
+
+/* ARO FIJO */
+.status-avatar__imagen__insta__explora {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+/* Borde gradiente fijo */
+.status-avatar__imagen__insta__explora::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: conic-gradient(
+    from 0deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5,
+    #feda75
+  );
+
+  box-shadow:
+    0 0 8px rgba(214, 41, 118, 0.7),
+    0 0 16px rgba(150, 47, 191, 0.45),
+    0 0 24px rgba(79, 91, 213, 0.35);
+
+  animation:
+    spinRing 2s linear infinite,
+    ringPulse 5s ease-in-out infinite;
+}
+
+/* Fondo interno para separar foto del aro */
+.status-avatar__imagen__insta__explora::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: inherit;
+  background: #111827;
+  z-index: 1;
+}
+
+/* Fotos que cambian dentro del aro fijo */
+.status-photo__explora {
+  position: absolute;
+  inset: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+
+  opacity: 0;
+  transform: scale(0.92);
+  animation: photoStatus 15s infinite both;
+}
+
+/* Textos */
+.card-content__imagen__insta__explora {
+  position: relative;
+  width: 96px;
+  height: 28px;
+  text-align: center;
+}
+
+.status-text__explora {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  transform: translateY(6px);
+  animation: textStatus 15s infinite both;
+}
+
+.status-text__explora h6 {
+  margin: 0;
+  font-size: 0.6rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.status-text__explora p {
+  margin: 0.15rem 0 0;
+  font-size: 0.46rem;
+  line-height: 1;
+}
+
+/* Orden de aparición */
+.status-photo-1__explora,
+.status-text-1__explora {
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora,
+.status-text-2__explora {
+  animation-delay: 5s;
+}
+
+.status-photo-3__explora,
+.status-text-3__explora {
+  animation-delay: 10s;
+}
+
+/* Animación de fotos */
+@keyframes photoStatus {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  38% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+
+/* Animación de textos */
+@keyframes textStatus {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  38% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+/* Rotación del aro */
+@keyframes spinRing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glow del aro cada cambio de estado */
+@keyframes ringPulse {
+  0% {
+    filter: brightness(1.4);
+    box-shadow:
+      0 0 10px rgba(254, 218, 117, 0.9),
+      0 0 18px rgba(214, 41, 118, 0.8),
+      0 0 28px rgba(79, 91, 213, 0.7);
+  }
+
+  18% {
+    filter: brightness(1.05);
+    box-shadow:
+      0 0 8px rgba(214, 41, 118, 0.7),
+      0 0 16px rgba(150, 47, 191, 0.45),
+      0 0 24px rgba(79, 91, 213, 0.35);
+  }
+
+  100% {
+    filter: brightness(1);
+    box-shadow:
+      0 0 8px rgba(214, 41, 118, 0.7),
+      0 0 16px rgba(150, 47, 191, 0.45),
+      0 0 24px rgba(79, 91, 213, 0.35);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iconos,  estados end */
+
+
+
 /* Explora end */
 
 
