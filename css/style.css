@@ -789,8 +789,26 @@ img {
 
   opacity: 0;
   transform: scale(0.92);
+  /* Orden de aparición  se mueve para cuadrar segudnos */
+  /* animation: photoStatus 30s infinite both; */
+}
+
+.status-photo__explora01{
+  animation: photoStatus 30s infinite both;
+}
+.status-photo__explora02{
   animation: photoStatus 15s infinite both;
 }
+.status-photo__explora03{
+  animation: photoStatus 21s infinite both;
+}
+.status-photo__explora04{
+  animation: photoStatus 24s infinite both;
+}
+.status-photo__explora05{
+  animation: photoStatus 18s infinite both;
+}
+
 
 /* Textos */
 .card-content__imagen__insta__explora {
@@ -806,8 +824,25 @@ img {
 
   opacity: 0;
   transform: translateY(6px);
+  /* Orden de aparición  se mueve para cuadrar segudnos */
+  /* animation: textStatus 30s infinite both; */
+}
+.status-text__explora01{
+  animation: textStatus 30s infinite both;
+}
+.status-text__explora02{
   animation: textStatus 15s infinite both;
 }
+.status-text__explora03{
+  animation: textStatus 21s infinite both;
+}
+.status-text__explora04{
+  animation: textStatus 24s infinite both;
+}
+.status-text__explora05{
+  animation: textStatus 18s infinite both;
+}
+
 
 .status-text__explora h6 {
   margin: 0;
@@ -822,21 +857,115 @@ img {
   line-height: 1;
 }
 
-/* Orden de aparición */
+/* Orden de aparición  se mueve para cuadrar segudnos */
 .status-photo-1__explora,
 .status-text-1__explora {
-  animation-delay: 0s;
+  /* animation-delay: 0s; */
 }
 
 .status-photo-2__explora,
 .status-text-2__explora {
-  animation-delay: 5s;
+  /* animation-delay: 10s; */
 }
 
 .status-photo-3__explora,
 .status-text-3__explora {
+  /* animation-delay: 20s; */
+} 
+
+/* /animacion01 start/ */
+.status-photo-1__explora01,
+.status-text-1__explora01{
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora01,
+.status-text-2__explora01{
   animation-delay: 10s;
 }
+
+.status-photo-3__explora01,
+.status-text-3__explora01{
+  animation-delay: 20s;
+}
+/* /animacion01 end/ */
+
+/* /animacion02 start/ */
+.status-photo-1__explora02,
+.status-text-1__explora02{
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora02,
+.status-text-2__explora02{
+  animation-delay: 5s;
+}
+
+.status-photo-3__explora02,
+.status-text-3__explora02{
+  animation-delay: 10s;
+}
+/* /animacion02 end/ */
+
+
+/* /animacion03 start/ */
+.status-photo-1__explora03,
+.status-text-1__explora03{
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora03,
+.status-text-2__explora03{
+  animation-delay: 7s;
+}
+
+.status-photo-3__explora03,
+.status-text-3__explora03{
+  animation-delay: 14s;
+}
+/* /animacion03 end/ */
+
+
+/* /animacion04 start/ */
+.status-photo-1__explora04,
+.status-text-1__explora04{
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora04,
+.status-text-2__explora04{
+  animation-delay: 8s;
+}
+
+.status-photo-3__explora04,
+.status-text-3__explora04{
+  animation-delay: 16s;
+}
+/* /animacion04 end/ */
+
+
+/* /animacion04 start/ */
+.status-photo-1__explora05,
+.status-text-1__explora05{
+  animation-delay: 0s;
+}
+
+.status-photo-2__explora05,
+.status-text-2__explora05{
+  animation-delay: 6s;
+}
+
+.status-photo-3__explora05,
+.status-text-3__explora05{
+  animation-delay: 12s;
+}
+/* /animacion04 end/ */
+
+
+
+
+
+
 
 /* Animación de fotos */
 @keyframes photoStatus {
