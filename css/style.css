@@ -241,6 +241,13 @@ img {
   margin: 0;
   line-height: 1;
 }
+
+.offcanas__brand__link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
 .offcanvas__brand__name {
   width: 95px;
   height: auto;
