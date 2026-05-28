@@ -149,13 +149,20 @@ img {
 
 /* Navbar de Bootstrap */
 .navbar {
-  position: relative;
+  /* position: relative; */
   height: var(--header-height);
+  min-height: var(--header-height);
+  display: flex;
+
+
   /* margin: 20px; */
   /* border-radius: 16px; */
   /* padding: 0.5rem; */
   font-weight: var(--font-semi-bold);
+  align-items: center;
 }
+
+
 
 .navbar-brand {
   color: var(--text-color);
@@ -165,6 +172,10 @@ img {
 }
 .navbar__brand__img {
   background-color: var(--text-color);
+
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .nav-link {
@@ -199,6 +210,51 @@ img {
   }
 }
 
+.navbar__brand{
+  display: flex;
+  align-items: center;
+  gap: 0.35rem
+}
+
+.navbar__brand__name{
+  width: 86px;
+  height: auto;
+  display: block;
+}
+
+
+.navbar > .container-fluid{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offcanvas__brand{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 1;
+}
+.offcanvas__brand__name {
+  width: 95px;
+  height: auto;
+  display: block;
+}
+
+.offcanvas__brand__name path{
+  fill: transparent;
+  stroke: var(--white-color);
+   stroke-width: 0.1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: textAnimation_viajemos 4s ease-in-out 1 forwards;
+}
 /* Home */
 .home {
   position: relative;
@@ -1134,7 +1190,7 @@ img {
 }
 
 .social-status__icon__explora i {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1;
   color: var(--white-color);
 }
@@ -1195,39 +1251,39 @@ img {
 }
 /* Ajuste fino del título Explora end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* iconos,  estados end */
 
-
-
 /* Explora end */
+
+
+
+
+/* Explora start */
+.navbar__brand__name  path,
+.offcanvas__brand__name path{
+  fill: transparent;
+  stroke: var(--white-color);
+  stroke-width: 0.1;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: textAnimation_viajemos 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation_viajemos {
+  0%{
+    stroke-dashoffset: 50;
+  }
+  80%{
+    fill: transparent;
+  }
+  100%{
+    fill: var(--white-color);
+    stroke-dashoffset: 0;
+  }
+}
+/* Explora end */
+
+
 
 
 /* <!-- icono de Whatsapp start --> */
