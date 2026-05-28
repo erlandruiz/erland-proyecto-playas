@@ -249,7 +249,7 @@ img {
 
 .offcanvas__brand__name path{
   fill: transparent;
-  stroke: var(--white-color);
+  stroke: var(--text-color);
    stroke-width: 0.1;
   stroke-dasharray: 50;
   stroke-dashoffset: 50;
@@ -1262,7 +1262,7 @@ img {
 .navbar__brand__name  path,
 .offcanvas__brand__name path{
   fill: transparent;
-  stroke: var(--white-color);
+  stroke: var(--text-color);
   stroke-width: 0.1;
   stroke-dasharray: 50;
   stroke-dashoffset: 50;
@@ -1277,7 +1277,7 @@ img {
     fill: transparent;
   }
   100%{
-    fill: var(--white-color);
+    fill: var(--text-color);
     stroke-dashoffset: 0;
   }
 }
